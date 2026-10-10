@@ -1,0 +1,178 @@
+/* 脱出ゲーム 和の宿 — 静的サイト共通スタイル */
+
+:root {
+  --bg: #fffaf0;
+  --fg: #2c2c2c;
+  --accent: #ff7a3d;
+  --accent-dark: #d95f24;
+  --card-bg: #ffffff;
+  --border: #eadfce;
+  --muted: #6b6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN",
+    "Yu Gothic", "Segoe UI", Roboto, sans-serif;
+  line-height: 1.75;
+  font-size: 17px;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+header.page-header {
+  text-align: center;
+  padding: 32px 0 16px;
+}
+
+header.page-header .logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent-dark);
+  margin: 0;
+}
+
+header.page-header .tagline {
+  color: var(--muted);
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 8px 0 4px;
+}
+
+h2 {
+  font-size: 19px;
+  margin: 32px 0 8px;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 20px 0 6px;
+}
+
+p, li {
+  font-size: 16px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+a {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul, ol {
+  padding-left: 1.3em;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.lang-choice {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.lang-choice a {
+  display: block;
+  text-align: center;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.lang-choice a:hover {
+  background: var(--accent-dark);
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.link-list li {
+  margin: 6px 0;
+}
+
+footer.page-footer {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0;
+  font-size: 15px;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background: #fff3e6;
+}
+
+code {
+  background: #f2ede2;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.9em;
+}
+
+@media (max-width: 420px) {
+  body {
+    font-size: 16px;
+  }
+  .wrap {
+    padding: 16px 14px 48px;
+  }
+}
